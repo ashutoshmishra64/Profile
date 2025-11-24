@@ -1,0 +1,90 @@
+.projects-container {
+  padding-top: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--text);
+}
+.projects-title span {
+  color: var(--accent);
+}
+
+/* Grid */
+.projects-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Card */
+.project-card {
+  padding: 25px;
+  border-radius: 14px;
+  border: 2px solid var(--accent);
+  background: rgba(0, 232, 255, 0.05);
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 12px rgba(0, 232, 255, 0.3);
+}
+
+.project-card:hover {
+  background: var(--accent);
+  color: black;
+  transform: translateY(-8px);
+}
+
+.project-card h2 {
+  color: var(--accent);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.project-card p {
+  font-size: 17px;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+.project-card .tech {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(0,0,0,0.6);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:2000;
+}
+.modal-content {
+  background: var(--bg);
+  padding: 30px;
+  border-radius: 14px;
+  width: 450px;
+  text-align:center;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 18px rgba(0,232,255,0.6);
+}
+
+.modal-buttons {
+  margin-top: 20px;
+  display:flex;
+  justify-content:center;
+  gap: 20px;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+  .projects-title { font-size: 38px; }
+  .modal-content { width: 90%; }
+}
