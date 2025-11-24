@@ -41,7 +41,7 @@ const Home = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}
       >
-        <a href="/resume.pdf" download className="btn primary">Download Resume</a>
+        <a href="https://drive.google.com/file/d/1TVhOzVZ6CIzM8_bk0jXqIh_nACuGyI5H/view?usp=sharing" download className="btn primary" target="_blank">Download Resume</a>
         <a href="/projects" className="btn secondary">View Projects</a>
       </motion.div>
 
